@@ -12,7 +12,7 @@ $(call add-radio-file-sha1-checked,radio/ccu.img,b3a84cf0869fb3af7a58a3883598314
 $(call add-radio-file-sha1-checked,radio/dpm.img,f112e4632d51683b667c9e24d4866c6370f0c0bc)
 $(call add-radio-file-sha1-checked,radio/gpueb.img,f7cd4622029024541c4f6d54f5b3030cb595df75)
 $(call add-radio-file-sha1-checked,radio/gz.img,327baadb96fca048b9c5d0407fc59dd14dc3cbe9)
-$(call add-radio-file-sha1-checked,radio/lk.img,d7429295798b8373a2a71cabfb923e42aad3c5b8)
+$(call add-radio-file-sha1-checked,radio/lk.img,82cfb201893fc375ca8699c2ea5d7c01de8f3315)
 $(call add-radio-file-sha1-checked,radio/logo.img,c66c57b90196e66bd13eaacd8844572a1686f3c4)
 $(call add-radio-file-sha1-checked,radio/mcf_ota.img,c3e8df770eb025963642aa887f492c0ad1591231)
 $(call add-radio-file-sha1-checked,radio/mcupm.img,6d5b38c6dbc50ab96268b4c26fe1d4e12a2c4814)
