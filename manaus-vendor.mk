@@ -55,36 +55,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/manaus/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tone/mt6879/ParameterDB_tone.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tone/mt6879/ParameterDB_tone.db \
     vendor/motorola/manaus/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/default_sensor/mt6879/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/default_sensor/mt6879/ISP_mapping.db \
     vendor/motorola/manaus/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/default_sensor/mt6879/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/default_sensor/mt6879/ISP_param.db \
-    vendor/motorola/manaus/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx214_mipi_raw/mt6879/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx214_mipi_raw/mt6879/ISP_mapping.db \
-    vendor/motorola/manaus/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx214_mipi_raw/mt6879/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx214_mipi_raw/mt6879/ISP_param.db \
-    vendor/motorola/manaus/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx334_mipi_raw/mt6879/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx334_mipi_raw/mt6879/ISP_mapping.db \
-    vendor/motorola/manaus/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx334_mipi_raw/mt6879/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx334_mipi_raw/mt6879/ISP_param.db \
-    vendor/motorola/manaus/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx334sub_mipi_raw/mt6879/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx334sub_mipi_raw/mt6879/ISP_mapping.db \
-    vendor/motorola/manaus/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx334sub_mipi_raw/mt6879/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx334sub_mipi_raw/mt6879/ISP_param.db \
-    vendor/motorola/manaus/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx481_mipi_raw/mt6879/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx481_mipi_raw/mt6879/ISP_mapping.db \
-    vendor/motorola/manaus/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx481_mipi_raw/mt6879/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx481_mipi_raw/mt6879/ISP_param.db \
-    vendor/motorola/manaus/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx586_mipi_raw/mt6879/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx586_mipi_raw/mt6879/ISP_mapping.db \
-    vendor/motorola/manaus/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx586_mipi_raw/mt6879/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx586_mipi_raw/mt6879/ISP_param.db \
-    vendor/motorola/manaus/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx766_mipi_raw/mt6879/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx766_mipi_raw/mt6879/ISP_mapping.db \
-    vendor/motorola/manaus/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx766_mipi_raw/mt6879/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx766_mipi_raw/mt6879/ISP_param.db \
-    vendor/motorola/manaus/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx766dual_mipi_raw/mt6879/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx766dual_mipi_raw/mt6879/ISP_mapping.db \
-    vendor/motorola/manaus/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx766dual_mipi_raw/mt6879/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx766dual_mipi_raw/mt6879/ISP_param.db \
-    vendor/motorola/manaus/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_aion_hi1336_mipi_raw/mt6879/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_aion_hi1336_mipi_raw/mt6879/ISP_mapping.db \
-    vendor/motorola/manaus/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_aion_hi1336_mipi_raw/mt6879/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_aion_hi1336_mipi_raw/mt6879/ISP_param.db \
-    vendor/motorola/manaus/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_aion_ov50a_mipi_raw/mt6879/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_aion_ov50a_mipi_raw/mt6879/ISP_mapping.db \
-    vendor/motorola/manaus/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_aion_ov50a_mipi_raw/mt6879/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_aion_ov50a_mipi_raw/mt6879/ISP_param.db \
-    vendor/motorola/manaus/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_aion_ov50e_mipi_raw/mt6879/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_aion_ov50e_mipi_raw/mt6879/ISP_mapping.db \
-    vendor/motorola/manaus/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_aion_ov50e_mipi_raw/mt6879/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_aion_ov50e_mipi_raw/mt6879/ISP_param.db \
-    vendor/motorola/manaus/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_aion_s5kgd2_mipi_raw/mt6879/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_aion_s5kgd2_mipi_raw/mt6879/ISP_mapping.db \
-    vendor/motorola/manaus/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_aion_s5kgd2_mipi_raw/mt6879/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_aion_s5kgd2_mipi_raw/mt6879/ISP_param.db \
-    vendor/motorola/manaus/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_dubai_gc02m1b_mipi_raw/mt6879/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_dubai_gc02m1b_mipi_raw/mt6879/ISP_mapping.db \
-    vendor/motorola/manaus/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_dubai_gc02m1b_mipi_raw/mt6879/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_dubai_gc02m1b_mipi_raw/mt6879/ISP_param.db \
-    vendor/motorola/manaus/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_dubai_hi1336_mipi_raw/mt6879/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_dubai_hi1336_mipi_raw/mt6879/ISP_mapping.db \
-    vendor/motorola/manaus/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_dubai_hi1336_mipi_raw/mt6879/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_dubai_hi1336_mipi_raw/mt6879/ISP_param.db \
-    vendor/motorola/manaus/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_dubai_ov32c_mipi_raw/mt6879/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_dubai_ov32c_mipi_raw/mt6879/ISP_mapping.db \
-    vendor/motorola/manaus/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_dubai_ov32c_mipi_raw/mt6879/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_dubai_ov32c_mipi_raw/mt6879/ISP_param.db \
-    vendor/motorola/manaus/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_dubai_ov50a_mipi_raw/mt6879/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_dubai_ov50a_mipi_raw/mt6879/ISP_mapping.db \
-    vendor/motorola/manaus/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_dubai_ov50a_mipi_raw/mt6879/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_dubai_ov50a_mipi_raw/mt6879/ISP_param.db \
     vendor/motorola/manaus/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_manaus_hi1336_mipi_raw/mt6879/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_manaus_hi1336_mipi_raw/mt6879/ISP_mapping.db \
     vendor/motorola/manaus/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_manaus_hi1336_mipi_raw/mt6879/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_manaus_hi1336_mipi_raw/mt6879/ISP_param.db \
     vendor/motorola/manaus/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_manaus_hi1336_mipi_raw_row/mt6879/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_manaus_hi1336_mipi_raw_row/mt6879/ISP_mapping.db \
@@ -98,13 +68,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/manaus/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_manaus_ov50a_mipi_raw_row/mt6879/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_manaus_ov50a_mipi_raw_row/mt6879/ISP_mapping.db \
     vendor/motorola/manaus/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_manaus_ov50a_mipi_raw_row/mt6879/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_manaus_ov50a_mipi_raw_row/mt6879/ISP_param.db \
     vendor/motorola/manaus/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mt6879/ISP_info.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mt6879/ISP_info.db \
-    vendor/motorola/manaus/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/ov48b_mipi_raw/mt6879/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/ov48b_mipi_raw/mt6879/ISP_mapping.db \
-    vendor/motorola/manaus/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/ov48b_mipi_raw/mt6879/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/ov48b_mipi_raw/mt6879/ISP_param.db \
-    vendor/motorola/manaus/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/s5k3m5sx_mipi_raw/mt6879/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/s5k3m5sx_mipi_raw/mt6879/ISP_mapping.db \
-    vendor/motorola/manaus/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/s5k3m5sx_mipi_raw/mt6879/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/s5k3m5sx_mipi_raw/mt6879/ISP_param.db \
-    vendor/motorola/manaus/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/s5k3p9sp_mipi_raw/mt6879/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/s5k3p9sp_mipi_raw/mt6879/ISP_mapping.db \
-    vendor/motorola/manaus/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/s5k3p9sp_mipi_raw/mt6879/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/s5k3p9sp_mipi_raw/mt6879/ISP_param.db \
-    vendor/motorola/manaus/proprietary/vendor/etc/AbnormalDisplayLog_dynamic.xml:$(TARGET_COPY_OUT_VENDOR)/etc/AbnormalDisplayLog_dynamic.xml \
     vendor/motorola/manaus/proprietary/vendor/etc/AudioLog_dynamic.xml:$(TARGET_COPY_OUT_VENDOR)/etc/AudioLog_dynamic.xml \
     vendor/motorola/manaus/proprietary/vendor/etc/ap_gain.bin:$(TARGET_COPY_OUT_VENDOR)/etc/ap_gain.bin \
     vendor/motorola/manaus/proprietary/vendor/etc/ap_gain_mmul.bin:$(TARGET_COPY_OUT_VENDOR)/etc/ap_gain_mmul.bin \
@@ -245,7 +208,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/manaus/proprietary/vendor/etc/dual_golden_wide.bin:$(TARGET_COPY_OUT_VENDOR)/etc/dual_golden_wide.bin \
     vendor/motorola/manaus/proprietary/vendor/etc/fstb.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/fstb.cfg \
     vendor/motorola/manaus/proprietary/vendor/etc/gbe.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/gbe.cfg \
-    vendor/motorola/manaus/proprietary/vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc \
     vendor/motorola/manaus/proprietary/vendor/etc/init/camerahalserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camerahalserver.rc \
     vendor/motorola/manaus/proprietary/vendor/etc/init/fuelgauged_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_init.rc \
     vendor/motorola/manaus/proprietary/vendor/etc/init/fuelgauged_nvram_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_nvram_init.rc \
@@ -259,14 +221,11 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/manaus/proprietary/vendor/etc/libnfc-nci_220e.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci_220e.conf \
     vendor/motorola/manaus/proprietary/vendor/etc/libnfc-nci_557.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci_557.conf \
     vendor/motorola/manaus/proprietary/vendor/etc/libnfc-nci_560.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci_560.conf \
-    vendor/motorola/manaus/proprietary/vendor/etc/libnfc-nxp-pnscr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp-pnscr.conf \
     vendor/motorola/manaus/proprietary/vendor/etc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
     vendor/motorola/manaus/proprietary/vendor/etc/libnfc-nxp_220.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp_220.conf \
     vendor/motorola/manaus/proprietary/vendor/etc/libnfc-nxp_220e.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp_220e.conf \
     vendor/motorola/manaus/proprietary/vendor/etc/libnfc-nxp_560.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp_560.conf \
     vendor/motorola/manaus/proprietary/vendor/etc/nfc_calibration.txt:$(TARGET_COPY_OUT_VENDOR)/etc/nfc_calibration.txt \
-    vendor/motorola/manaus/proprietary/vendor/etc/sn100u_nfcon.pnscr:$(TARGET_COPY_OUT_VENDOR)/etc/sn100u_nfcon.pnscr \
-    vendor/motorola/manaus/proprietary/vendor/etc/sn100u_pnx_ese_cplc.pnscr:$(TARGET_COPY_OUT_VENDOR)/etc/sn100u_pnx_ese_cplc.pnscr \
     vendor/motorola/manaus/proprietary/vendor/etc/tetras/portrait_repair_composite.model:$(TARGET_COPY_OUT_VENDOR)/etc/tetras/portrait_repair_composite.model \
     vendor/motorola/manaus/proprietary/vendor/etc/vhw.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vhw.xml \
     vendor/motorola/manaus/proprietary/vendor/firmware/BT_FW.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/BT_FW.cfg \
@@ -336,7 +295,6 @@ PRODUCT_PACKAGES += \
     libaualgo_foundation \
     libaualgo_sst_component \
     libaudio_param_parser-vnd \
-    libc++_shared \
     libcam.seninfn3d \
     libcamalgo.3dnr \
     libcamalgo.WarpMapResizer \
@@ -354,7 +312,6 @@ PRODUCT_PACKAGES += \
     libcamalgo.utility \
     libcamalgo.vsdofUtil \
     libcamalgo.warp \
-    libdynamiclog \
     libfeaturepolicy \
     libfft_vendor \
     libfgauge_gm30 \
@@ -364,8 +321,6 @@ PRODUCT_PACKAGES += \
     libimgsensorca \
     libiqi_bridge \
     libispcameraca \
-    liblog_vendor \
-    libminiui \
     libmpbase \
     libmtkcam_fdWarpConvert \
     libmtkcam_pipelinepolicy-aov \
@@ -373,7 +328,6 @@ PRODUCT_PACKAGES += \
     libmtkisp_metadata \
     libmtkisp_metadata_v2 \
     libnxp_extamp_intf \
-    liboem_specific \
     libpn557_fw \
     libpn560_fw \
     libportrait_repair_ppl3_ocl \
@@ -683,18 +637,12 @@ PRODUCT_PACKAGES += \
     MobileFeliCaClient \
     manifest_cameraprovider.xml \
     motorola.hardware.camera.imgtuner.aidl.xml \
-    SN1X0__RF-On.txt \
     ParameterDB_awb.db \
     fuelgauged \
     fuelgauged_nvram \
-    android.hardware.secure_element@1.2-service-mediatek \
     motorola.hardware.camera.imgtuner.aidl-service \
     camerahalserver \
-    dumpfaultd.mt6879 \
-    nxpnfcinfo \
-    pnscr \
-    pnscr_cal \
-    sns_mot_client
+    nxpnfcinfo
 
 PRODUCT_PACKAGES += \
     vendor_bin_crossbuild_DataSet_SQLiteModule_db_ae_ParameterDB_ae_db \
@@ -711,36 +659,6 @@ PRODUCT_PACKAGES += \
     vendor_bin_crossbuild_DataSet_SQLiteModule_db_tone_ParameterDB_tone_db \
     vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_default_sensor_ISP_mapping_db \
     vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_default_sensor_ISP_param_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_imx214_mipi_raw_ISP_mapping_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_imx214_mipi_raw_ISP_param_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_imx334_mipi_raw_ISP_mapping_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_imx334_mipi_raw_ISP_param_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_imx334sub_mipi_raw_ISP_mapping_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_imx334sub_mipi_raw_ISP_param_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_imx481_mipi_raw_ISP_mapping_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_imx481_mipi_raw_ISP_param_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_imx586_mipi_raw_ISP_mapping_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_imx586_mipi_raw_ISP_param_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_imx766_mipi_raw_ISP_mapping_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_imx766_mipi_raw_ISP_param_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_imx766dual_mipi_raw_ISP_mapping_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_imx766dual_mipi_raw_ISP_param_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_mot_aion_hi1336_mipi_raw_ISP_mapping_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_mot_aion_hi1336_mipi_raw_ISP_param_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_mot_aion_ov50a_mipi_raw_ISP_mapping_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_mot_aion_ov50a_mipi_raw_ISP_param_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_mot_aion_ov50e_mipi_raw_ISP_mapping_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_mot_aion_ov50e_mipi_raw_ISP_param_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_mot_aion_s5kgd2_mipi_raw_ISP_mapping_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_mot_aion_s5kgd2_mipi_raw_ISP_param_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_mot_dubai_gc02m1b_mipi_raw_ISP_mapping_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_mot_dubai_gc02m1b_mipi_raw_ISP_param_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_mot_dubai_hi1336_mipi_raw_ISP_mapping_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_mot_dubai_hi1336_mipi_raw_ISP_param_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_mot_dubai_ov32c_mipi_raw_ISP_mapping_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_mot_dubai_ov32c_mipi_raw_ISP_param_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_mot_dubai_ov50a_mipi_raw_ISP_mapping_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_mot_dubai_ov50a_mipi_raw_ISP_param_db \
     vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_mot_manaus_hi1336_mipi_raw_ISP_mapping_db \
     vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_mot_manaus_hi1336_mipi_raw_ISP_param_db \
     vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_mot_manaus_hi1336_mipi_raw_row_ISP_mapping_db \
@@ -754,14 +672,7 @@ PRODUCT_PACKAGES += \
     vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_mot_manaus_ov50a_mipi_raw_row_ISP_mapping_db \
     vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_mot_manaus_ov50a_mipi_raw_row_ISP_param_db \
     vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_ISP_info_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_ov48b_mipi_raw_ISP_mapping_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_ov48b_mipi_raw_ISP_param_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_s5k3m5sx_mipi_raw_ISP_mapping_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_s5k3m5sx_mipi_raw_ISP_param_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_s5k3p9sp_mipi_raw_ISP_mapping_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_s5k3p9sp_mipi_raw_ISP_param_db \
     vendor_bin_hw_camerahalserver \
-    vendor_bin_dumpfaultd \
     vendor_lib64_hw_audio_primary_mt6879_so \
     vendor_lib64_hw_android_hardware_camera_provider@2_6-impl-mediatek_so \
     vendor_lib64_hw_vendor_mediatek_hardware_camera_atms@1_0-impl_so \

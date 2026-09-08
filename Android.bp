@@ -874,28 +874,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libc++_shared",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libc++_shared.so",
-            ],
-            shared_libs: [
-                "libc",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libcam.seninfn3d",
     owner: "motorola",
     strip: {
@@ -1355,32 +1333,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libdynamiclog",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libdynamiclog.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libfeaturepolicy",
     owner: "motorola",
     strip: {
@@ -1632,63 +1584,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "liblog_vendor",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/liblog_vendor.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libminiui",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libminiui.so",
-            ],
-            shared_libs: [
-                "libpixelflinger",
-                "libpng",
-                "libutils",
-                "liblog",
-                "libcutils",
-                "libdrm",
-                "libbase",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libmpbase",
     owner: "motorola",
     strip: {
@@ -1890,31 +1785,6 @@ cc_prebuilt_library_shared {
                 "libcrypto",
                 "libssl",
                 "libfile_op",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "liboem_specific",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/liboem_specific.so",
-            ],
-            shared_libs: [
-                "libutils",
                 "libc++",
                 "libc",
                 "libm",
@@ -12490,14 +12360,6 @@ prebuilt_etc_xml {
 }
 
 sh_binary {
-    name: "SN1X0__RF-On.txt",
-    owner: "motorola",
-    src: "proprietary/vendor/bin/SN1X0__RF-On.txt",
-    filename: "SN1X0__RF-On.txt",
-    soc_specific: true,
-}
-
-sh_binary {
     name: "ParameterDB_awb.db",
     owner: "motorola",
     src: "proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/awb/mt6879/ParameterDB_awb.db",
@@ -12558,45 +12420,6 @@ cc_prebuilt_binary {
         none: true,
     },
     prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "android.hardware.secure_element@1.2-service-mediatek",
-    owner: "motorola",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/android.hardware.secure_element@1.2-service-mediatek",
-            ],
-            shared_libs: [
-                "vendor.mediatek.hardware.mtkradioex@2.0",
-                "libhidlbase",
-                "libutils",
-                "android.hardware.secure_element@1.0",
-                "android.hardware.secure_element@1.1",
-                "android.hardware.secure_element@1.2",
-                "libcutils",
-                "liblog",
-                "android.hardware.radio@1.0",
-                "android.hardware.radio@1.1",
-                "android.hardware.radio@1.2",
-                "android.hardware.radio@1.3",
-                "android.hardware.radio@1.4",
-                "vendor.mediatek.hardware.mtkradioex@3.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
     soc_specific: true,
 }
 
@@ -12690,32 +12513,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "dumpfaultd.mt6879",
-    owner: "motorola",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/mt6879/dumpfaultd.mt6879",
-            ],
-            shared_libs: [
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "mt6879",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "nxpnfcinfo",
     owner: "motorola",
     target: {
@@ -12726,88 +12523,6 @@ cc_prebuilt_binary {
             shared_libs: [
                 "libcutils",
                 "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "pnscr",
-    owner: "motorola",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/pnscr",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libhardware_legacy",
-                "libhardware",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "pnscr_cal",
-    owner: "motorola",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/pnscr_cal",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libhardware_legacy",
-                "libdl",
-                "libhardware",
-                "libc++",
-                "libc",
-                "libm",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "sns_mot_client",
-    owner: "motorola",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/sns_mot_client",
-            ],
-            shared_libs: [
-                "libhardware",
-                "libhfmanager",
                 "libc++",
                 "libc",
                 "libm",
@@ -12922,216 +12637,6 @@ install_symlink {
 }
 
 install_symlink {
-    name: "vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_imx214_mipi_raw_ISP_mapping_db",
-    soc_specific: true,
-    installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx214_mipi_raw/ISP_mapping.db",
-    symlink_target: "/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx214_mipi_raw/mt6879/ISP_mapping.db",
-}
-
-install_symlink {
-    name: "vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_imx214_mipi_raw_ISP_param_db",
-    soc_specific: true,
-    installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx214_mipi_raw/ISP_param.db",
-    symlink_target: "/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx214_mipi_raw/mt6879/ISP_param.db",
-}
-
-install_symlink {
-    name: "vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_imx334_mipi_raw_ISP_mapping_db",
-    soc_specific: true,
-    installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx334_mipi_raw/ISP_mapping.db",
-    symlink_target: "/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx334_mipi_raw/mt6879/ISP_mapping.db",
-}
-
-install_symlink {
-    name: "vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_imx334_mipi_raw_ISP_param_db",
-    soc_specific: true,
-    installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx334_mipi_raw/ISP_param.db",
-    symlink_target: "/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx334_mipi_raw/mt6879/ISP_param.db",
-}
-
-install_symlink {
-    name: "vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_imx334sub_mipi_raw_ISP_mapping_db",
-    soc_specific: true,
-    installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx334sub_mipi_raw/ISP_mapping.db",
-    symlink_target: "/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx334sub_mipi_raw/mt6879/ISP_mapping.db",
-}
-
-install_symlink {
-    name: "vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_imx334sub_mipi_raw_ISP_param_db",
-    soc_specific: true,
-    installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx334sub_mipi_raw/ISP_param.db",
-    symlink_target: "/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx334sub_mipi_raw/mt6879/ISP_param.db",
-}
-
-install_symlink {
-    name: "vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_imx481_mipi_raw_ISP_mapping_db",
-    soc_specific: true,
-    installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx481_mipi_raw/ISP_mapping.db",
-    symlink_target: "/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx481_mipi_raw/mt6879/ISP_mapping.db",
-}
-
-install_symlink {
-    name: "vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_imx481_mipi_raw_ISP_param_db",
-    soc_specific: true,
-    installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx481_mipi_raw/ISP_param.db",
-    symlink_target: "/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx481_mipi_raw/mt6879/ISP_param.db",
-}
-
-install_symlink {
-    name: "vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_imx586_mipi_raw_ISP_mapping_db",
-    soc_specific: true,
-    installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx586_mipi_raw/ISP_mapping.db",
-    symlink_target: "/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx586_mipi_raw/mt6879/ISP_mapping.db",
-}
-
-install_symlink {
-    name: "vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_imx586_mipi_raw_ISP_param_db",
-    soc_specific: true,
-    installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx586_mipi_raw/ISP_param.db",
-    symlink_target: "/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx586_mipi_raw/mt6879/ISP_param.db",
-}
-
-install_symlink {
-    name: "vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_imx766_mipi_raw_ISP_mapping_db",
-    soc_specific: true,
-    installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx766_mipi_raw/ISP_mapping.db",
-    symlink_target: "/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx766_mipi_raw/mt6879/ISP_mapping.db",
-}
-
-install_symlink {
-    name: "vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_imx766_mipi_raw_ISP_param_db",
-    soc_specific: true,
-    installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx766_mipi_raw/ISP_param.db",
-    symlink_target: "/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx766_mipi_raw/mt6879/ISP_param.db",
-}
-
-install_symlink {
-    name: "vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_imx766dual_mipi_raw_ISP_mapping_db",
-    soc_specific: true,
-    installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx766dual_mipi_raw/ISP_mapping.db",
-    symlink_target: "/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx766dual_mipi_raw/mt6879/ISP_mapping.db",
-}
-
-install_symlink {
-    name: "vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_imx766dual_mipi_raw_ISP_param_db",
-    soc_specific: true,
-    installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx766dual_mipi_raw/ISP_param.db",
-    symlink_target: "/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx766dual_mipi_raw/mt6879/ISP_param.db",
-}
-
-install_symlink {
-    name: "vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_mot_aion_hi1336_mipi_raw_ISP_mapping_db",
-    soc_specific: true,
-    installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_aion_hi1336_mipi_raw/ISP_mapping.db",
-    symlink_target: "/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_aion_hi1336_mipi_raw/mt6879/ISP_mapping.db",
-}
-
-install_symlink {
-    name: "vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_mot_aion_hi1336_mipi_raw_ISP_param_db",
-    soc_specific: true,
-    installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_aion_hi1336_mipi_raw/ISP_param.db",
-    symlink_target: "/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_aion_hi1336_mipi_raw/mt6879/ISP_param.db",
-}
-
-install_symlink {
-    name: "vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_mot_aion_ov50a_mipi_raw_ISP_mapping_db",
-    soc_specific: true,
-    installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_aion_ov50a_mipi_raw/ISP_mapping.db",
-    symlink_target: "/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_aion_ov50a_mipi_raw/mt6879/ISP_mapping.db",
-}
-
-install_symlink {
-    name: "vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_mot_aion_ov50a_mipi_raw_ISP_param_db",
-    soc_specific: true,
-    installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_aion_ov50a_mipi_raw/ISP_param.db",
-    symlink_target: "/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_aion_ov50a_mipi_raw/mt6879/ISP_param.db",
-}
-
-install_symlink {
-    name: "vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_mot_aion_ov50e_mipi_raw_ISP_mapping_db",
-    soc_specific: true,
-    installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_aion_ov50e_mipi_raw/ISP_mapping.db",
-    symlink_target: "/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_aion_ov50e_mipi_raw/mt6879/ISP_mapping.db",
-}
-
-install_symlink {
-    name: "vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_mot_aion_ov50e_mipi_raw_ISP_param_db",
-    soc_specific: true,
-    installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_aion_ov50e_mipi_raw/ISP_param.db",
-    symlink_target: "/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_aion_ov50e_mipi_raw/mt6879/ISP_param.db",
-}
-
-install_symlink {
-    name: "vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_mot_aion_s5kgd2_mipi_raw_ISP_mapping_db",
-    soc_specific: true,
-    installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_aion_s5kgd2_mipi_raw/ISP_mapping.db",
-    symlink_target: "/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_aion_s5kgd2_mipi_raw/mt6879/ISP_mapping.db",
-}
-
-install_symlink {
-    name: "vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_mot_aion_s5kgd2_mipi_raw_ISP_param_db",
-    soc_specific: true,
-    installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_aion_s5kgd2_mipi_raw/ISP_param.db",
-    symlink_target: "/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_aion_s5kgd2_mipi_raw/mt6879/ISP_param.db",
-}
-
-install_symlink {
-    name: "vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_mot_dubai_gc02m1b_mipi_raw_ISP_mapping_db",
-    soc_specific: true,
-    installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_dubai_gc02m1b_mipi_raw/ISP_mapping.db",
-    symlink_target: "/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_dubai_gc02m1b_mipi_raw/mt6879/ISP_mapping.db",
-}
-
-install_symlink {
-    name: "vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_mot_dubai_gc02m1b_mipi_raw_ISP_param_db",
-    soc_specific: true,
-    installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_dubai_gc02m1b_mipi_raw/ISP_param.db",
-    symlink_target: "/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_dubai_gc02m1b_mipi_raw/mt6879/ISP_param.db",
-}
-
-install_symlink {
-    name: "vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_mot_dubai_hi1336_mipi_raw_ISP_mapping_db",
-    soc_specific: true,
-    installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_dubai_hi1336_mipi_raw/ISP_mapping.db",
-    symlink_target: "/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_dubai_hi1336_mipi_raw/mt6879/ISP_mapping.db",
-}
-
-install_symlink {
-    name: "vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_mot_dubai_hi1336_mipi_raw_ISP_param_db",
-    soc_specific: true,
-    installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_dubai_hi1336_mipi_raw/ISP_param.db",
-    symlink_target: "/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_dubai_hi1336_mipi_raw/mt6879/ISP_param.db",
-}
-
-install_symlink {
-    name: "vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_mot_dubai_ov32c_mipi_raw_ISP_mapping_db",
-    soc_specific: true,
-    installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_dubai_ov32c_mipi_raw/ISP_mapping.db",
-    symlink_target: "/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_dubai_ov32c_mipi_raw/mt6879/ISP_mapping.db",
-}
-
-install_symlink {
-    name: "vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_mot_dubai_ov32c_mipi_raw_ISP_param_db",
-    soc_specific: true,
-    installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_dubai_ov32c_mipi_raw/ISP_param.db",
-    symlink_target: "/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_dubai_ov32c_mipi_raw/mt6879/ISP_param.db",
-}
-
-install_symlink {
-    name: "vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_mot_dubai_ov50a_mipi_raw_ISP_mapping_db",
-    soc_specific: true,
-    installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_dubai_ov50a_mipi_raw/ISP_mapping.db",
-    symlink_target: "/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_dubai_ov50a_mipi_raw/mt6879/ISP_mapping.db",
-}
-
-install_symlink {
-    name: "vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_mot_dubai_ov50a_mipi_raw_ISP_param_db",
-    soc_specific: true,
-    installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_dubai_ov50a_mipi_raw/ISP_param.db",
-    symlink_target: "/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_dubai_ov50a_mipi_raw/mt6879/ISP_param.db",
-}
-
-install_symlink {
     name: "vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_mot_manaus_hi1336_mipi_raw_ISP_mapping_db",
     soc_specific: true,
     installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mot_manaus_hi1336_mipi_raw/ISP_mapping.db",
@@ -13223,59 +12728,10 @@ install_symlink {
 }
 
 install_symlink {
-    name: "vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_ov48b_mipi_raw_ISP_mapping_db",
-    soc_specific: true,
-    installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/ov48b_mipi_raw/ISP_mapping.db",
-    symlink_target: "/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/ov48b_mipi_raw/mt6879/ISP_mapping.db",
-}
-
-install_symlink {
-    name: "vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_ov48b_mipi_raw_ISP_param_db",
-    soc_specific: true,
-    installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/ov48b_mipi_raw/ISP_param.db",
-    symlink_target: "/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/ov48b_mipi_raw/mt6879/ISP_param.db",
-}
-
-install_symlink {
-    name: "vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_s5k3m5sx_mipi_raw_ISP_mapping_db",
-    soc_specific: true,
-    installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/s5k3m5sx_mipi_raw/ISP_mapping.db",
-    symlink_target: "/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/s5k3m5sx_mipi_raw/mt6879/ISP_mapping.db",
-}
-
-install_symlink {
-    name: "vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_s5k3m5sx_mipi_raw_ISP_param_db",
-    soc_specific: true,
-    installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/s5k3m5sx_mipi_raw/ISP_param.db",
-    symlink_target: "/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/s5k3m5sx_mipi_raw/mt6879/ISP_param.db",
-}
-
-install_symlink {
-    name: "vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_s5k3p9sp_mipi_raw_ISP_mapping_db",
-    soc_specific: true,
-    installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/s5k3p9sp_mipi_raw/ISP_mapping.db",
-    symlink_target: "/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/s5k3p9sp_mipi_raw/mt6879/ISP_mapping.db",
-}
-
-install_symlink {
-    name: "vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_s5k3p9sp_mipi_raw_ISP_param_db",
-    soc_specific: true,
-    installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/s5k3p9sp_mipi_raw/ISP_param.db",
-    symlink_target: "/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/s5k3p9sp_mipi_raw/mt6879/ISP_param.db",
-}
-
-install_symlink {
     name: "vendor_bin_hw_camerahalserver",
     soc_specific: true,
     installed_location: "bin/hw/camerahalserver",
     symlink_target: "/vendor/bin/hw/mt6879/camerahalserver",
-}
-
-install_symlink {
-    name: "vendor_bin_dumpfaultd",
-    soc_specific: true,
-    installed_location: "bin/dumpfaultd",
-    symlink_target: "/vendor/bin/mt6879/dumpfaultd.mt6879",
 }
 
 install_symlink {
