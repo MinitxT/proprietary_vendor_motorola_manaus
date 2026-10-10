@@ -2,7 +2,7 @@
 <AudioParam version="1.0">
   <ParamTree>
     <Param path="RCV_NORMAL" param_id="0"/>
-    <Param path="RCV_2_IN_1" param_id="7"/>
+    <Param path="RCV_2_IN_1" param_id="5"/>
     <Param path="RCV_3_IN_1" param_id="7"/>
     <Param path="RCV_NO_ANA" param_id="5"/>
     <Param path="HS" param_id="1"/>
